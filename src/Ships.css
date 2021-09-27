@@ -1,0 +1,93 @@
+:root {
+  /* Colors: */
+  --surface: #eeeeee;
+  --outline: #e4e4e4;
+  --dark-hard: #000000;
+  --dark_soft: #9f9f9f;
+  --light-medium: #ffffff;
+  --light-hard: #ffffff;
+  --primary: #34ffc8;
+  --secondary: #6a0572;
+  --unnamed-color-121212: #121212;
+
+  --unnamed-font-family-roboto: Roboto;
+  --unnamed-font-style-normal: normal;
+  --unnamed-font-weight-medium: medium;
+  --unnamed-font-weight-normal: normal;
+  --unnamed-font-size-10: 10px;
+  --unnamed-font-size-14: 14px;
+  --unnamed-font-size-16: 16px;
+  --unnamed-font-size-20: 20px;
+  --unnamed-character-spacing-1-5: 1.5px;
+  --unnamed-character-spacing-1-25: 1.25px;
+  --unnamed-character-spacing-0-15: 0.15px;
+  --unnamed-character-spacing-0-25: 0.25px;
+  --unnamed-character-spacing-0-5: 0.5px;
+  --unnamed-line-spacing-16: 16px;
+  --unnamed-line-spacing-20: 20px;
+  --unnamed-line-spacing-24: 24px;
+  --unnamed-text-transform-uppercase: uppercase;
+}
+.users {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 3rem auto;
+}
+.users .execute_read {
+  text-align: center;
+}
+.users .execute_read button {
+  border: 1px solid var(--primary);
+  border: 1px solid #34ffc8;
+  border-radius: 24px;
+  opacity: 1;
+  font: var(--unnamed-font-style-normal) normal
+    var(--unnamed-font-weight-medium) var(--unnamed-font-size-14) /
+    var(--unnamed-line-spacing-16) var(--unnamed-font-family-roboto);
+  letter-spacing: var(--unnamed-character-spacing-1-25);
+  color: var(--primary);
+  text-align: left;
+  font: normal normal medium 14px/16px Roboto;
+  letter-spacing: 1.25px;
+  color: #34ffc8;
+  text-transform: uppercase;
+  opacity: 1;
+  padding: 8px 25px;
+  cursor: pointer;
+  background-color: transparent;
+}
+.users li {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  background: transparent linear-gradient(180deg, #f5f5f5 0%, #f5f5f500 100%) 0%
+    0% no-repeat padding-box;
+
+  border-radius: 32px;
+  opacity: 1;
+  /* background: transparent; */
+  mix-blend-mode: soft-light;
+}
+.users .date-notation {
+  margin-bottom: 1rem;
+}
+.users img {
+  margin-bottom: 1rem;
+  text-align: center;
+  border-radius: 15px;
+  border: 2px var(--primary) solid;
+  width: 97%;
+  height: 200px;
+  object-fit: cover;
+}
+.center {
+  text-align: center;
+}
+.mission {
+  color: var(--primary);
+}
+.detail {
+  color: #fff;
+}

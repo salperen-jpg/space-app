@@ -1,0 +1,12 @@
+.message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.message h1 {
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: #34ffc8;
+}
