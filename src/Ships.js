@@ -6,7 +6,7 @@ import Shipsss from './Shipsss';
 
 const url = 'https://api.spacex.land/rest/launches/';
 
-const Ships = () => {
+const Ships = ({ search }) => {
   const [ships, setShips] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -34,7 +34,7 @@ const Ships = () => {
   }
   return (
     <>
-      <Shipsss ships={ships} />
+      <Shipsss ships={ships} search={search} />
       {/* <ul className='users'>
         {ships.slice(67, 73).map((ship) => {
           const {

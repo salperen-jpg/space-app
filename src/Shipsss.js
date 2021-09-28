@@ -1,9 +1,12 @@
 import Ship from './Ship';
-const Shipsss = ({ ships }) => {
+const Shipsss = ({ ships, search }) => {
+  const filteredShips = ships.slice(67, 73).filter((s) => {
+    return s.mission_name.toLowerCase().includes(search.toLowerCase());
+  });
   return (
     <>
       <ul className='users'>
-        {ships.slice(67, 73).map((ship) => {
+        {filteredShips.map((ship) => {
           // const {
           //   id,
           //   details,
@@ -12,7 +15,7 @@ const Shipsss = ({ ships }) => {
           //   static_fire_date_utc,
           // } = ship;
           return (
-            <Ship key={ship.id} {...ship} />
+            <Ship key={ship.id} {...ship} search={search} />
             // <li key={id} {...ship}>
             //   <div className='center'>
             //     <img

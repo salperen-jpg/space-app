@@ -3,7 +3,7 @@ import Logo from './logo.svg';
 import Fav from './fav.svg';
 import './NavBar.css';
 
-const NavBar = () => {
+const NavBar = (props) => {
   return (
     <div className='header'>
       <div className='nav'>
@@ -22,6 +22,9 @@ const NavBar = () => {
                 name=''
                 placeholder='SEARCH FOR SHIPS'
                 className='input'
+                onChange={(e) => {
+                  props.onSearchChangeHandler(e.target.value);
+                }}
               />
               <button type='button' className='button'>
                 <i className='fa fa-search '></i>
