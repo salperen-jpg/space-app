@@ -1,6 +1,6 @@
 import React from 'react';
-import Logo from './logo.svg';
-import Fav from './fav.svg';
+import Logo from '../../utils/logo.svg';
+import Fav from '../../utils/fav.svg';
 import './NavBar.css';
 
 const NavBar = (props) => {
@@ -33,7 +33,7 @@ const NavBar = (props) => {
           </li>
           <li>
             <div className='fav'>
-              <img src={Fav} alt='' />
+              <img src={Fav} alt='' onClick={props.openModal} />
             </div>
           </li>
         </ul>

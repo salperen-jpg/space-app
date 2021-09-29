@@ -12,7 +12,7 @@
 }
 
 body {
-  background: transparent url('./images/bg.png') 0% 0% no-repeat padding-box;
+  background: transparent url('./utils/bg.png') 0% 0% no-repeat padding-box;
   background-size: cover;
 
   font-family: 'Roboto';
