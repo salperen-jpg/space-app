@@ -15,7 +15,7 @@ const Ships = ({ search }) => {
     return <Loading />;
   }
   return (
-    <ul className='users'>
+    <ul className='ship'>
       {filteredShips.map((ship) => {
         return <Ship key={ship.id} ship={ship} {...ship} search={search} />;
       })}

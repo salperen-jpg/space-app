@@ -10,14 +10,28 @@ const Modal = (props) => {
     <>
       {props.showModal ? (
         <div className='modal-wrapper'>
-          <h1>This is my Modal</h1>
-          {favShips.map((fav) => {
-            return (
-              <div key={fav.id}>
-                <img src={fav.links.flickr_images[0]} alt='' />
-              </div>
-            );
-          })}
+          <div
+            className='close-btn'
+            onClick={() => props.setShowModal((prev) => !prev)}
+          >
+            {/* <i class='fa fa-times-circle fa-3x'></i> */}
+            <span className='closing'>X</span>
+          </div>
+          <ul className='favShips'>
+            {favShips.map((fav) => {
+              return (
+                <li key={fav.id}>
+                  <div className='left-side'>
+                    <img src={fav.links.flickr_images[0]} alt='' />
+                    <p>{fav.mission_name}</p>
+                  </div>
+                  <div className='delete-icon'>
+                    <i class='fa fa-trash fa-2x'></i>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       ) : null}
     </>

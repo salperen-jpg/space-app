@@ -74,6 +74,24 @@
     border: none;
   }
 }
+@media only screen and (max-width: 1200px) and (min-width: 580px) {
+  .nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .search-container {
+    width: 400px;
+    height: 66px;
+    background-color: aqua;
+    border-radius: 30px;
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  .header {
+    margin-bottom: 12rem;
+  }
+}
+
 .fav img {
   cursor: pointer;
 }

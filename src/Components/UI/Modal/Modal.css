@@ -15,9 +15,85 @@
   color: #000;
   transition-property: width, height;
   transition-duration: 3s, 5s, 2s, 1s;
+  box-sizing: border-box;
 }
 
 .modal-wrapper img {
-  height: 45px;
-  width: 45px;
+  height: 70px;
+  width: 70px;
+  border: 2px solid var(--light-hard);
+
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  opacity: 1;
+}
+.modal-wrapper li {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  list-style-type: none;
+}
+
+.close-btn {
+  padding-top: 5rem;
+  padding-left: 150px;
+  cursor: pointer;
+}
+
+.closing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #fff;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+.closing:hover {
+  transform: rotate(180deg);
+}
+.favShips {
+  margin-top: 1rem;
+}
+.favShips p {
+  font-size: 14px;
+}
+
+.favShips li {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  flex-basis: 50%;
+  display: row;
+  justify-content: first baseline;
+  align-items: center;
+  transition: all 0.2s;
+}
+.favShips li:hover {
+  background-color: #d4d4d4;
+
+  border-radius: 10px;
+}
+.favShips .left-side {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.delete-icon {
+  position: absolute;
+  right: 0;
+  margin-right: 0.5rem;
+}
+
+.delete-icon:hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #fff;
 }

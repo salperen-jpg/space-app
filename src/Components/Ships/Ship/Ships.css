@@ -41,16 +41,16 @@
   margin-right: 1rem;
 }
 
-.users {
+.ship {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
   margin: 3rem auto;
 }
-.users .execute_read {
+.ship .execute_read {
   text-align: center;
 }
-.users .execute_read button {
+.ship .execute_read button {
   border: 1px solid var(--primary);
   border: 1px solid #34ffc8;
   border-radius: 24px;
@@ -70,7 +70,7 @@
   cursor: pointer;
   background-color: transparent;
 }
-.users li {
+.ship li {
   padding: 1.2rem;
   position: relative;
   display: flex;
@@ -98,10 +98,10 @@
     rgba(255, 255, 255, 0) 100%
   );
 }
-.users .date-notation {
+.ship .date-notation {
   margin-bottom: 1rem;
 }
-.users img {
+.ship img {
   margin-bottom: 1rem;
   text-align: center;
   border-radius: 15px;
@@ -121,10 +121,32 @@
 }
 
 @media (max-width: 600px) {
-  .users {
+  .ship {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin: 3rem auto;
   }
+  .ship p {
+    font-size: 14px;
+  }
+}
+
+.execute_read {
+  margin-top: 1rem;
+}
+
+.date-notation {
+  font: var(--unnamed-font-style-normal) normal
+    var(--unnamed-font-weight-medium) var(--unnamed-font-size-10) /
+    var(--unnamed-line-spacing-16) var(--unnamed-font-family-roboto);
+  letter-spacing: var(--unnamed-character-spacing-1-5);
+  color: var(--dark_soft);
+  text-align: left;
+  font: normal normal medium 10px Roboto;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: #9f9f9f;
+  text-transform: uppercase;
+  opacity: 1;
 }
