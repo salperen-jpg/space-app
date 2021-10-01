@@ -1,6 +1,6 @@
 import React from 'react';
 import './Ship/Ships.css';
-import Loading from '../UI/Loading';
+import Loading from '../UI/Loading/Loading';
 import Ship from './Ship/Ship';
 import useFetchShips from '../Hooks/useFetchShips';
 

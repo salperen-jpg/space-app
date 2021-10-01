@@ -1,6 +1,6 @@
 import React from 'react';
 import './Modal.css';
-import useFetchShips from '../../Hooks/useFetchShips';
+
 import { useSelector } from 'react-redux';
 
 const Modal = (props) => {

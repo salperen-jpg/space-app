@@ -3,6 +3,7 @@ import './App.css';
 import NavBar from './Components/NavBar/NavBar';
 import Ships from './Components/Ships/Ships';
 import Modal from './Components/UI/Modal/Modal';
+
 function App() {
   const [search, setSearch] = useState('');
   const [showModal, setShowModal] = useState(false);
